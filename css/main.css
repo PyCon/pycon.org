@@ -354,7 +354,17 @@ footer a {
    Media Queries
    ========================================================================== */
 
+@media only screen and (min-width: 1900px) {
+  section.banner {
+    background-size: 100%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
+  section.banner {
+    background-image: url('../img/banner-bg-1000.jpg');
+  }
+
   footer p:first-of-type {
     float: none;
   }
@@ -383,6 +393,10 @@ footer a {
 }
 
 @media only screen and (max-width: 600px) {
+  section.banner {
+    background-image: url('../img/banner-bg-600.jpg');
+  }
+
   .half-col {
     width: 100%;
     float: none;
