@@ -405,6 +405,15 @@ footer a {
     background-image: url('../img/map-600.png');
   }
 
+  .intro {
+    padding: 15px;
+  }
+
+  .intro h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
   .half-col {
     width: 100%;
     float: none;
