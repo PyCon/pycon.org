@@ -365,6 +365,10 @@ footer a {
     background-image: url('../img/banner-bg-1000.jpg');
   }
 
+  section.map {
+    background-image: url('../img/map-1000.png');
+  }
+
   footer p:first-of-type {
     float: none;
   }
@@ -397,6 +401,10 @@ footer a {
     background-image: url('../img/banner-bg-600.jpg');
   }
 
+  section.map {
+    background-image: url('../img/map-600.png');
+  }
+
   .half-col {
     width: 100%;
     float: none;
@@ -411,6 +419,7 @@ footer a {
   .section-header {
     margin-bottom: 0;
     padding: 20px;
+    font-size: 22px;
   }
 
   iframe.calendar {
