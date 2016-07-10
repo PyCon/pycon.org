@@ -203,12 +203,6 @@ p.lede-paragraph {
 
 /* Conferences(Generic Styles) */
 
-/* conferences container */
-.conferences {
-  margin-top: 40px;
-}
-
-
 /* individual card*/
 .conference {
   border: 1px solid #ececec;
@@ -223,7 +217,6 @@ p.lede-paragraph {
   -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.1);
   box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.1);
 }
-
 
 /* card header */
 .conference-header {
@@ -361,8 +354,58 @@ footer a {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 1000px) {
+  footer p:first-of-type {
+    float: none;
+  }
 
+  footer p:last-of-type {
+    margin-top: 10px;
+    float: none;
+  }
+
+  section.banner {
+    padding: 20px 0;
+  }
+
+  .intro {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  iframe.calendar {
+    padding: 5px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .half-col {
+    width: 100%;
+    float: none;
+    float: left;
+    margin: 0;
+  }
+
+  .half-col:last-of-type {
+    margin-top: -20px;
+  }
+
+  .section-header {
+    margin-bottom: 0;
+    padding: 20px;
+  }
+
+  iframe.calendar {
+    margin-top: 20px;
+  }
+
+  p.lede-paragraph {
+    font-size: 18px;
+  }
 }
 
 @media print,
