@@ -69,23 +69,35 @@ body {
   color: #5d5d5d;
 }
 
+/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
+}
+
+h1 {
+  font-size: 35px;
 }
 
 h2 {
   font-weight: 400;
 }
 
-p.lede-paragraph {
-  font-size: 37px;
-  font-weight: 400;
-  color: #ccd9e5;
+h3 {
+  font-size: 20px;
 }
 
-.lede-paragraph strong {
-  font-weight: 400;
-  color: #fff;
+a {
+  color: #3776ab;
+}
+
+/* Page Structure */
+
+img,
+iframe,
+object,
+embed {
+  max-width: 100%;
 }
 
 .container {
@@ -95,6 +107,40 @@ p.lede-paragraph {
   margin: 0 auto;
 }
 
+section {
+  padding: 0 0 40px 0;
+  margin: 0;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 25px;
+  padding: 35px;
+  margin: 0 0 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* Grid / Columns */
+
+.columns:after {
+  content:'';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.half-col {
+  width: calc(50% - 10px);
+  float: left;
+  margin-right: 20px;
+}
+
+.half-col:nth-child(even) {
+  margin-right: 0;
+}
+
+/* Header with menu */
+
 header {
   background-color: #2e5e87;
   color: #fff;
@@ -102,10 +148,68 @@ header {
   padding: 15px 0 10px 0;
 }
 
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  text-decoration: none;
+  padding: 30px 15px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Top Banner (blue) */
+
+section.banner {
+  padding: 80px 0;
+  background: #2b5b84 url('../img/banner-bg.jpg') no-repeat 50% top;
+}
+
+.intro {
+  color: #fff;
+  width: 75%;
+  margin-left: 25%;
+  background-color: rgba(43, 91, 132, 0.8);
+  padding: 20px 25px 25px;
+}
+
+.intro h1 {
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+
+p.lede-paragraph {
+  font-size: 25px;
+  font-weight: 400;
+  color: #ccd9e5;
+  margin: 0;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Conferences(Generic Styles) */
+
+/* conferences container */
 .conferences {
   margin-top: 40px;
 }
 
+
+/* individual card*/
 .conference {
   border: 1px solid #ececec;
   background-color: #fff;
@@ -120,6 +224,8 @@ header {
   box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.1);
 }
 
+
+/* card header */
 .conference-header {
   display: table;
   width: 100%;
@@ -155,6 +261,7 @@ header {
   color: #767676;
 }
 
+/* card body */
 .conference-details {
   padding: 15px;
 }
@@ -167,60 +274,87 @@ header {
   margin-bottom: 0;
 }
 
-.half-col {
-  width: calc(50% - 10px);
-  float: left;
-  margin-right: 20px;
+/* National Conferences */
+section.map {
+  background: rgb(249, 249, 249) url('../img/map.png') no-repeat fixed 50% 10%;
 }
 
-.half-col:nth-child(even) {
-  margin-right: 0;
+section.map .section-header {
+  border-color: #ececec;
+  background-color: rgba(249, 249, 249, 0.5);
 }
 
-.columns:after {
-  content:'';
+/* Regional Conferences */
+section.stars {
+  background: #2b5b84 url('../img/stars.jpg') repeat fixed 50% 10%;
+}
+
+section.stars .section-header {
+  color: #fff;
+  background-color: rgba(249, 249, 249, 0.05);
+  border-color: rgba(249, 249, 249, 0.075);
+}
+
+section.stars .conference {
+  border-color: rgba(249, 249, 249, 0.075);
+  background-color: rgba(249, 249, 249, 0.05);
+  color: #fff;
+}
+
+section.stars .conference-header {
+  border-color: rgba(249, 249, 249, 0.075);
+}
+
+section.stars .location,
+section.stars a {
+  color: #ccd9e5;
+}
+
+/* Calendar */
+
+section.shapes {
+  background: url('../img/shapes.jpg') repeat fixed 50% 10%;
+}
+
+section.shapes .section-header {
+  border-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+iframe.calendar {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer:after {
+  content: '';
   display: table;
   width: 100%;
   clear: both;
 }
 
-h3 {
-  font-size: 20px;
-}
-
-section {
-  padding: 0 0 40px 0;
+footer p {
   margin: 0;
 }
 
-.section-header {
-  text-align: center;
-  font-size: 25px;
-  padding: 35px;
-  margin: 0 0 40px;
-  border-bottom: 1px solid #ececec;
-  background-color: rgba(249, 249, 249, 0.5);
+footer p:first-of-type {
+  float: left;
 }
 
-section.light-grey {
-  background-color: rgb(249, 249, 249);
+footer p:last-of-type {
+  float: right;
 }
 
-section.map {
-  background: rgb(249, 249, 249) url('../img/map.png') no-repeat fixed 50% 10%;
-}
-
-section.blue {
-  background-color: #2b5b84;
+footer a {
   color: #fff;
-}
-
-section.banner {
-  padding: 40px 0 80px;
-}
-
-a {
-  color: #3776ab;
 }
 
 /* ==========================================================================
