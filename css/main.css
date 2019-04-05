@@ -218,6 +218,11 @@ p.lede-paragraph {
   box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.1);
 }
 
+.conference-hero {
+  width: 66.6%;
+  margin: auto;
+}
+
 /* card header */
 .conference-header {
   display: table;
