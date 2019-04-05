@@ -9,6 +9,8 @@ Conferences/events are listed in alphabetical order, so please be sure to insert
 yours in the correct position. As the conferences are presented in columns
 you may need to move the column container to make two columns equal in length.
 
+## Adding your event
+
 Each *national* conference card should follow this format:
 
 ```
