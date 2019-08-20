@@ -5,75 +5,60 @@ This is the source code for [pycon.org](http://www.pycon.org/).
 If you run a Python event or conference, you can add or edit your listing by
 making a pull request to this repository.
 
-Conferences/events are listed in alphabetical order, so please be sure to insert
-yours in the correct position. As the conferences are presented in columns
-you may need to move the column container to make two columns equal in length.
+## Ordering
+
+National Conferences are listed in alphabetical location *by location*. 
+
+Regional conferences are listed in alphabetical order *by name*. 
+
+## Testing your change
+
+PyCon.org is data-driven with [Jekyll templating](https://jekyllrb.com). 
 
 ## Adding your event
 
-Each *national* conference card should follow this format:
+Each *national* conference card should be created as `_national/conferencename.yml`, with a: 
 
-```
-<div class="conference">
-  <div class="conference-header">
-    <div class="flag">
-      <span class="flag-icon flag-icon-country-code"></span>
-    </div>
-    <div class="conference-title">
-      <h3>Conference Name</h3>
-      <p class="location">Conference Country</p>
-    </div>
-  </div>
-  <div class="conference-details">
-    <p>A short introduction about the conference.</p>
-    <p>Information about past conferences.</p>
-    <p>Information about the next conference.</p>
-    <p><a href="conference-url">Visit Website</a></p>
-  </div>
-</div>
-```
+ * `name`
+ * `flag` (2-letter ISO 3166 Alpha 2, e.g. [us](http://pycon.org/img/flags/4x3/us.svg), [nz](http://pycon.org/img/flags/4x3/nz.svg))
+ * `location`
+ * `website` URL
 
 For Example:
 
 ```
-<div class="conference">
-  <div class="conference-header">
-    <div class="flag">
-      <span class="flag-icon flag-icon-fr"></span>
-    </div>
-    <div class="conference-title">
-      <h3>PyConFR</h3>
-      <p class="location">France</p>
-    </div>
-  </div>
-  <div class="conference-details">
-    <p>PyConFR is the annual conference for the Francophone world, organized by the <a href="https://www.afpy.org/">AFPy</a>.</p>
-    <p>Past conferences have been held in Pau(2015), AnotherLocation(2014), AnotherLocation(2013).</p>
-    <p>The next PyConFR will be held in Rennes on the 13th-16th of October, 2016.</p>
-    <p><a href="https://2016.pycon.fr/">Visit Website</a></p>
-  </div>
-</div>
+---
+name: PyCon Namibia
+flag: na
+location: Namibia
+website: http://python-namibia.org/
+---
 ```
 
-*Special interest and regional* conferences should follow this format:
+*Special interest and regional* conferences should be created as `_regional/conferencename.yml`, with a:
 
+ * `name`
+ * `location`
+ * `website` URL
+
+For Example: 
 ```
-<div class="conference">
-  <div class="conference-header">
-    <div class="conference-title">
-      <h3>Conference Name</h3>
-      <p class="location">Location</p>
-    </div>
-  </div>
-  <div class="conference-details">
-    <p>A short introduction about the conference.</p>
-    <p>Information about past conferences.</p>
-    <p>Information about the next conference.</p>
-    <p><a href="conference-url">Visit Website</a></p>
-  </div>
-</div>
+---
+name: Pycon Latam
+location: Puerto Vallarta, México
+website: https://www.pylatam.org/en/
+---
 ```
+
+*Be sure to include the `---` at the start and end of the file!*
+
+### If in doubt
+
+Copy an example from another conference. 
+
+## Calendar
 
 If you would like to submit your event to the event calendar please see
 the [python.org wiki](https://wiki.python.org/moin/PythonEventsCalendar#Submitting_an_Event)
 for instructions.
+

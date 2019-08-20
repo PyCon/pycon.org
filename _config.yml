@@ -1,0 +1,5 @@
+collections:
+  national:
+    output: false
+  regional:
+    output: false
