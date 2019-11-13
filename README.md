@@ -15,7 +15,7 @@ Regional conferences are listed in alphabetical order *by name*.
 
 PyCon.org is data-driven with [Jekyll templating](https://jekyllrb.com). 
 
-This repo has been configured with [Netlify](netlify.com) [deployment previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify). When you submit your pull request, a render will be generated so you can preview your changes. 
+This repo has been configured with [Netlify](netlify.com) [deployment previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify). When you submit your pull request, a render will be generated so you can preview your changes. Click the 'Details' link on the deploy-preview check to see your preview.  
 
 ## Adding your event
 
