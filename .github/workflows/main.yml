@@ -25,7 +25,7 @@ jobs:
         run: | 
           gem update --system --no-document
           gem update bundler --no-document
-          gem install jekyll bundler
+          gem install jekyll bundler html-proofer
           bundle install
       - name: build jekyll
         run: bundle exec jekyll build
