@@ -1,6 +1,7 @@
 ---
 name: PyCon SK
 flag: sk
+discontinued: true
 location: Slovakia
 website: http://sk.pycon.org
 ---
