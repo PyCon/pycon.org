@@ -1,0 +1,34 @@
+name: htmlproofer
+on:
+  push:
+    branches:
+      - gh-pages
+  pull_request:
+    branches:
+      - gh-pages
+  schedule:
+      - cron: '0 0 * * SAT'
+
+jobs:
+  checklinks:
+    name: Linux
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.6.x
+      - name: bundle install
+        run: | 
+          gem update --system --no-document
+          gem update bundler --no-document
+          gem install jekyll bundler
+          bundle install
+      - name: build jekyll
+        run: bundle exec jekyll build
+      - name: htmlproofer
+        run: |
+          bundle exec htmlproofer ./_site
