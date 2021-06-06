@@ -355,6 +355,14 @@ footer a {
   color: #fff;
 }
 
+.discontinued { 
+  font-style: italic;
+  float:right;
+}
+.discontinued::before { 
+  content: "(discontinued)"
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

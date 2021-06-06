@@ -1,6 +1,8 @@
 ---
 name: PyCon Uruguay
 flag: uy
+discontinued: true
 location: Uruguay
-website: https://python.uy/
+website: https://web.archive.org/web/20130521223448/http://uy.pycon.org/
+twitter: uapycon
 ---
