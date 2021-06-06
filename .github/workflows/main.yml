@@ -20,12 +20,12 @@ jobs:
       - name: setup ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: 2.6.x
+          ruby-version: 2.7.x
       - name: bundle install
         run: | 
           gem update --system --no-document
           gem update bundler --no-document
-          gem install jekyll bundler html-proofer
+          gem install jekyll bundler
           bundle install
       - name: build jekyll
         run: bundle exec jekyll build
