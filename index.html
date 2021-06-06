@@ -108,7 +108,7 @@ layout: page
               <div class="conference-details">
                 <p>
                   <a href="{{conf.website}}">Visit{% if conf.website contains "web.archive.org" %} Archived{% endif %} Website</a>
-                  {% if conf.twitter %}<a href="https://twitter.com/{{conf.twitter}}">Follow on Twitter</a>{% endif %}
+                  {% if conf.twitter %}| <a href="https://twitter.com/{{conf.twitter}}">Follow on Twitter</a>{% endif %}
                 </p>
               </div>
             </div>
@@ -134,7 +134,8 @@ layout: page
                 </div>
               </div>
               <div class="conference-details">
-                <p><a href="{{conf.website}}">View{% if conf.website contains "web.archive.org" %} Archived{% endif %} Website</a></p>
+                <p><a href="{{conf.website}}">View{% if conf.website contains "web.archive.org" %} Archived{% endif %} Website</a>
+                {% if conf.twitter %} | <a href="https://twitter.com/{{conf.twitter}}">Follow on Twitter</a>{% endif %}</p>
               </div>
             </div>
           </div>
