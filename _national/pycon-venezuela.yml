@@ -1,6 +1,7 @@
 ---
 name: PyCon Venezuela
 flag: ve
+discontinued: true
 location: Venezuela
 website: http://ve.pycon.org
 ---

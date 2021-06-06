@@ -1,6 +1,7 @@
 ---
 name: PyCon Iran
 flag: ir
+discontinued: true
 location: Iran
 website: http://www.pycon.ir
 ---
