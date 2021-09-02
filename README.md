@@ -35,6 +35,7 @@ Each *national* conference card should be created as `_national/conferencename.y
  * `flag` (2-letter ISO 3166 Alpha 2, e.g. [us](http://pycon.org/img/flags/4x3/us.svg), [nz](http://pycon.org/img/flags/4x3/nz.svg))
  * `location`
  * `website` URL
+ * `twitter` Twitter Handle
 
 For Example:
 
@@ -44,6 +45,7 @@ name: PyCon Namibia
 flag: na
 location: Namibia
 website: http://python-namibia.org/
+twitter: PyConNA
 ---
 ```
 
@@ -52,6 +54,7 @@ website: http://python-namibia.org/
  * `name`
  * `location`
  * `website` URL
+ * `twitter` Twitter Handle
 
 For Example: 
 ```
@@ -59,6 +62,7 @@ For Example:
 name: Pycon Latam
 location: Puerto Vallarta, México
 website: https://www.pylatam.org/en/
+twitter: pylatam
 ---
 ```
 
