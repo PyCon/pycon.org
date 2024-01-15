@@ -1,8 +1,7 @@
 ---
-name: Pycon Pakistan
+name: PyCon Pakistan
 flag: pk
-discontinued: true
 location: Pakistan
-website: https://web.archive.org/web/20170908182753/http://pk.python.org:80/
+website: https://pycon.pk
 twitter: PyConPK
 ---
