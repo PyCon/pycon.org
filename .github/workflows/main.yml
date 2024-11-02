@@ -31,5 +31,5 @@ jobs:
         run: bundle exec jekyll build
       - name: htmlproofer
         run: |
-          gem install html-proofer
+          bundle install html-proofer
           bundle exec htmlproofer ./_site
