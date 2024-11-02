@@ -1,4 +1,7 @@
 name: htmlproofer
+
+# Validates all links are up to date on the website
+
 on:
   push:
     branches:
@@ -11,7 +14,7 @@ on:
 
 jobs:
   checklinks:
-    name: Linux
+    name: Check links
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -23,10 +26,10 @@ jobs:
         run: |
           gem update --system --no-document
           gem update bundler --no-document
-          gem install jekyll bundler
           bundle install
       - name: build jekyll
         run: bundle exec jekyll build
       - name: htmlproofer
         run: |
+          gem install html-proofer
           bundle exec htmlproofer ./_site
